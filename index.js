@@ -9,7 +9,7 @@ const PORT = process.env.PORT || 3000;
 let db = null;
 const initilizeDBandServer = async () => {
   try {
-    db = await open({ filename: dbpath, driver: sqlite3.Database });
+    //db = await open({ filename: dbpath, driver: sqlite3.Database });
     app.listen(PORT, () => {
       console.log("Server is running at http://localhost:3000");
     });
@@ -20,7 +20,7 @@ const initilizeDBandServer = async () => {
 };
 initilizeDBandServer();
 
-app.get('/tasks', async(req, res) => {
+/*app.get('/tasks', async(req, res) => {
     console.log("get1")
     const getQuery = `SELECT * FROM todo;`;
 
@@ -29,13 +29,9 @@ app.get('/tasks', async(req, res) => {
   //response.send(Res);
   res.send(Res);
     res.json(res);
-});
+}); */
 
-app.get('/t', async(req, res) => {
-    
-  console.log("getQuery");
-    res.json("ff");
-});
+
 
 
 
