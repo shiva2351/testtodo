@@ -39,7 +39,7 @@ app.get('/tasks', async(req, res) => {
   //response.send(Res);
   
     res.json("res");
-}
+});
 
 
 
