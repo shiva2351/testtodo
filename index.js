@@ -1,10 +1,10 @@
 const express = require("express");
 const app = express();
 app.use(express.json());
-const { open } = require("sqlite");
-const sqlite3 = require("sqlite3");
+//const { open } = require("sqlite");
+//const sqlite3 = require("sqlite3");
 const path = require("path");
-const dbpath = path.join(__dirname, "todo.db");
+//const dbpath = path.join(__dirname, "todo.db");
 const PORT = process.env.PORT || 3000;
 let db = null;
 const initilizeDBandServer = async () => {
