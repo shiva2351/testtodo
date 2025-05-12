@@ -31,6 +31,16 @@ initilizeDBandServer();
     res.json(res);
 }); */
 
+app.get('/tasks', async(req, res) => {
+    console.log("gettest")
+
+  
+  
+  //response.send(Res);
+  
+    res.json("res");
+}
+
 
 
 
